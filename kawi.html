@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kawi Writer</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            textarea {
+                width: 800px;
+                height: 100px;
+                font-size: 36px;
+                padding: 10px;
+            }
+            .button {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                background-color: #f0f0f0;
+                border: 1px solid #ddd;
+                cursor: pointer;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Kawi Writer</h2>
+        <p>by Hilmi Yafi Al-Faruq 2025</p><br>
+        <textarea id="textbox" placeholder="Type here..."></textarea>
+        <br>
+        <table>
+            <tr>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F34}')">A</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F12}')">K</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F17}')">C</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F21}')">T</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F1C}')">TT</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F26}')">P</button></td>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F03}')">WIGNYAN</button></td>
+                <td><button class="button" style="width:120px;" onclick="deleteChar()">HAPUS</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F36}')">I</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F14}')">G</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F19}')">J</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F23}')">D</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F1E}')">DD</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F28}')">B</button></td>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F02}')">LAYAR</button></td>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\n')">ENTER</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F38}')">U</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F16}')">NG</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F1B}')">NY</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F25}')">N</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F20}')">NN</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F2A}')">M</button></td>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F01}')">CECAK</button></td>
+                <td><button class="button" style="width:120px;" onclick="">SHIFT</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F3E}')">E TALING</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F32}')">H</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F2F}')">SY</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F31}')">S</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F30}')">SS</button></td>
+                <td></td>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F42}')">PASANGAN</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F40}')">E PEPET</button></td>
+                <td></td>
+                <td><button class="button" onclick="insertChar('\u{11F2B}')">Y</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F2D}')">L</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F2C}')">R</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F2E}')">W</button></td>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F41}')">PANGKON</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" style="width:120px;" onclick="insertChar('\u{11F3E}\u{11F34}')">O</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F51}')">1</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F52}')">2</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F53}')">3</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F54}')">4</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F55}')">5</button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="button" onclick="insertChar('\u{11F56}')">6</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F57}')">7</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F58}')">8</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F59}')">9</button></td>
+                <td><button class="button" onclick="insertChar('\u{11F50}')">0</button></td>
+                <td></td>
+            </tr>
+        </table>
+        <script>
+            function insertChar(char) {
+                const textbox = document.getElementById("textbox");
+                textbox.value += char;
+            }
+            function deleteChar() {
+                const textbox = document.getElementById("textbox");
+                textbox.value = textbox.value.substring(0, textbox.value.length - 2);
+            }
+        </script>
+    </body>
+</html>
