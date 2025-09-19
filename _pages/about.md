@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-# Personal Projects
+## Personal Research Projects
 - [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
 - [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), implemented a ramp filtered inverse radon transform to transform sinograms back to images.
 - [Camera Projection Transformation Rectilinear to Panini Projection](https://youtu.be/ZHWN-Nnq7M0), made a projection transformation shader in HLSL to combine two cameras view in realtime.
@@ -12,7 +12,34 @@ title: "About"
 - [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), labeled images for the dataset of the neural network and trained a YOLO based object detection model.
 - [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 
-# Education
+## Personal Games & Apps Projects
+I developed these games and apps:
+- [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), an Android singing synthesizer.
+- [Space Tracer](https://hilmiyafia.itch.io/space-tracer), a 3D space racing web game.
+- [Rusa's Legacy](https://hilmiyafia.itch.io/rusas-legacy), an escape room game.
+- [Amber and Ice](https://hilmiyafia.itch.io/amber-and-ice), a pocoman-like web puzzle game.
+- [Colorfall](https://play.google.com/store/apps/details?id=com.hilmiyafia.colorfall), an Android physics-based puzzle game.
+- [Impedance Matcher](https://play.google.com/store/apps/details?id=com.hilmiyafia.impedancematcher), an Android impedance matching calculator.
+- [Statistika](https://play.google.com/store/apps/details?id=com.hilmiyafia.statistika), an Android statistics calculator for calculating regression and its classic assumption tests.
+- [Teka-Teki Silang Caroll](https://play.google.com/store/apps/details?id=com.hilmiyafia.tekatekisilangcaroll), and Android hybrid game between crossword and rolling-ball game.
+- [Astromaths](https://play.google.com/store/apps/details?id=com.hilmiyafia.astromaths), an Android hyrid game between asteroid-like game and math puzzle game.
+- [Resistor Circuit Simulator](https://play.google.com/store/apps/details?id=com.hilmiyafia.resistorcircuitsimulator), an Android resistor circuit simulator.
+
+
+## Awards & Achievements
+- 2nd place at the [Flame Jam 2025](https://itch.io/jam/flame-jam-2025), 2025.
+- 4th place at the [Flame Game Jam 3.0](https://itch.io/jam/flame-jam-3), 2023.
+- Favorite Presentation at the [Indonesian 30th National Student Scientific Week (PIMNAS), Applied Technology Branch](), 2017.
+
+## Publication & Thesis
+- [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)
+H. Y. Al-Faruq, H. Septanto
+International Journal of Power Electronics and Drive Systems (IJPEDS), Vol. 13, No. 2, 2022.
+DOI: 10.11591/ijpeds.v13.i2.pp665-673
+- [Orange Classification with Statistical Feature Extraction and Neural Network](https://etd.repository.ugm.ac.id/penelitian/detail/174936)
+Bachelor's Thesis, Faculty of Engineering, Universitas Gadjah Mada, Indonesia, 2019.
+
+## Education
 - Bachelor's Degree in Electrical Engineering (2015-2019)
 Faculty of Engineering, Universitas Gadjah Mada, Indonesia.
 Thesis: [Orange Classification with Statistical Feature Extraction and Neural Network](https://etd.repository.ugm.ac.id/penelitian/detail/174936)
