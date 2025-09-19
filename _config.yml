@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Hello! I’m an electrical engineer with focus on computer vision, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
 github_username: hilmiyafia
 minimal_mistakes_skin: default
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
