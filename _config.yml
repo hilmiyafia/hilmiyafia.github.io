@@ -73,13 +73,13 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/hilmiyafia/"
     - label: "ArtStation"
-      icon: "fas fa-fw fa-artstation"
+      icon: "fab fa-fw fa-artstation"
       url: "https://hilmiyafia.artstation.com/"
     - label: "Google Play"
-      icon: "fas fa-fw fa-play"
+      icon: "fab fa-fw fa-google"
       url: "https://play.google.com/store/apps/dev?id=6130267633033000217"
     - label: "Itch.io"
-      icon: "fas fa-fw fa-itch"
+      icon: "fab fa-fw fa-itch"
       url: "https://hilmiyafia.itch.io/"
       
 footer:
