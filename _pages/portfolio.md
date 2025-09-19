@@ -4,27 +4,27 @@ title: "Portfolio"
 ---
 
 ## Personal Research Projects
-- [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
-- [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
-- [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), implemented a ramp filtered inverse radon transform to transform sinograms back to images.
-- [Camera Projection Transformation Rectilinear to Panini Projection](https://youtu.be/ZHWN-Nnq7M0), made a projection transformation shader in HLSL to combine two cameras view in realtime.
-- [Optical Character Recognition for Seven Segment Displays](https://youtu.be/f664FwAlZV0), developed a digit recognizer and classifier using OpenCV and CNN PyTorch for android device.
-- [Satellite Images Classification](https://youtube.com/playlist?list=PLuVz-FGt23yI1x4dVVahq1eoMrGohCcgR), programmed a satellite images classifier using CNN in PyTorch for a YouTube tutorial.
-- [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), labeled images for the dataset of the neural network and trained a YOLO based object detection model.
-- [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
+- [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), 2025, implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
+- [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), 2025, implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
+- [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), 2024, implemented a ramp filtered inverse radon transform to transform sinograms back to images.
+- [Camera Projection Transformation Rectilinear to Panini Projection](https://youtu.be/ZHWN-Nnq7M0), 2023, made a projection transformation shader in HLSL to combine two cameras view in realtime.
+- [Optical Character Recognition for Seven Segment Displays](https://youtu.be/f664FwAlZV0), 2023, developed a digit recognizer and classifier using OpenCV and CNN PyTorch for android device.
+- [Satellite Images Classification](https://youtube.com/playlist?list=PLuVz-FGt23yI1x4dVVahq1eoMrGohCcgR), 2020, programmed a satellite images classifier using CNN in PyTorch for a YouTube tutorial.
+- [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), 2019, labeled images for the dataset of the neural network and trained a YOLO based object detection model.
+- [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), 2019, single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 
 ## Personal Games & Apps Projects
 I developed these games and apps:
-- [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), an Android singing synthesizer.
-- [Space Tracer](https://hilmiyafia.itch.io/space-tracer), a 3D space racing web game.
-- [Rusa's Legacy](https://hilmiyafia.itch.io/rusas-legacy), an escape room game.
-- [Amber and Ice](https://hilmiyafia.itch.io/amber-and-ice), a pocoman-like web puzzle game.
-- [Colorfall](https://play.google.com/store/apps/details?id=com.hilmiyafia.colorfall), an Android physics-based puzzle game.
-- [Impedance Matcher](https://play.google.com/store/apps/details?id=com.hilmiyafia.impedancematcher), an Android impedance matching calculator.
-- [Statistika](https://play.google.com/store/apps/details?id=com.hilmiyafia.statistika), an Android statistics calculator for calculating regression and its classic assumption tests.
-- [Teka-Teki Silang Caroll](https://play.google.com/store/apps/details?id=com.hilmiyafia.tekatekisilangcaroll), and Android hybrid game between crossword and rolling-ball game.
-- [Astromaths](https://play.google.com/store/apps/details?id=com.hilmiyafia.astromaths), an Android hyrid game between asteroid-like game and math puzzle game.
-- [Resistor Circuit Simulator](https://play.google.com/store/apps/details?id=com.hilmiyafia.resistorcircuitsimulator), an Android resistor circuit simulator.
+- [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), 2025, an Android singing synthesizer.
+- [Space Tracer](https://hilmiyafia.itch.io/space-tracer), 2025, a 3D space racing web game.
+- [Rusa's Legacy](https://hilmiyafia.itch.io/rusas-legacy), 2024, an escape room game.
+- [Amber and Ice](https://hilmiyafia.itch.io/amber-and-ice), 2023, a pocoman-like web puzzle game.
+- [Colorfall](https://play.google.com/store/apps/details?id=com.hilmiyafia.colorfall), 2023, an Android physics-based puzzle game.
+- [Impedance Matcher](https://play.google.com/store/apps/details?id=com.hilmiyafia.impedancematcher), 2023, an Android impedance matching calculator.
+- [Statistika](https://play.google.com/store/apps/details?id=com.hilmiyafia.statistika), 2021, an Android statistics calculator for calculating regression and its classic assumption tests.
+- [Teka-Teki Silang Caroll](https://play.google.com/store/apps/details?id=com.hilmiyafia.tekatekisilangcaroll), 2021, and Android hybrid game between crossword and rolling-ball game.
+- [Astromaths](https://play.google.com/store/apps/details?id=com.hilmiyafia.astromaths), 2020, an Android hyrid game between asteroid-like game and math puzzle game.
+- [Resistor Circuit Simulator](https://play.google.com/store/apps/details?id=com.hilmiyafia.resistorcircuitsimulator), 2020, an Android resistor circuit simulator.
 
 ## Awards & Achievements
 - 2nd place at the [Flame Jam 2025](https://itch.io/jam/flame-jam-2025), 2025.
