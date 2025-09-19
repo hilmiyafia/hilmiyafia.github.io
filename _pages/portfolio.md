@@ -3,8 +3,7 @@ permalink: /portfolio/
 title: "Portfolio"
 ---
 
-Hello,
-I’m an electrical engineer with focus on computer vision, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
+Hello! I’m an electrical engineer with focus on computer vision, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
 
 ## Personal Research Projects
 - [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), 2025, implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
