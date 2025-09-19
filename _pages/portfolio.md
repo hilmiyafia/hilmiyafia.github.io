@@ -13,7 +13,7 @@ title: "Portfolio"
 - [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), 2019, labeled images for the dataset of the neural network and trained a YOLO based object detection model.
 - [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), 2019, single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 
-## Personal Games & Apps Projects
+## Games & Apps Projects
 I developed these games and apps:
 - [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), 2025, an Android singing synthesizer.
 - [Space Tracer](https://hilmiyafia.itch.io/space-tracer), 2025, a 3D space racing web game.
@@ -30,6 +30,9 @@ I developed these games and apps:
 - 2nd place at the [Flame Jam 2025](https://itch.io/jam/flame-jam-2025), 2025.
 - 4th place at the [Flame Game Jam 3.0](https://itch.io/jam/flame-jam-3), 2023.
 - Favorite Presentation at the [Indonesian 30th National Student Scientific Week (PIMNAS), Applied Technology](), 2017.
+
+## Certification
+- TOEFL iBT, Score: 107/120
 
 ## Publication & Thesis
 - [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)
