@@ -18,7 +18,7 @@ Hello! I’m an electrical engineer with focus on computer vision, image process
 
 ## Games & Apps Projects
 I developed these games and apps:
-- [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), 2025, an Android singing synthesizer.
+- [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), 2025, an Android singing synthesizer that is based on the WORLD vocoder.
 - [Space Tracer](https://hilmiyafia.itch.io/space-tracer), 2025, a 3D space racing web game.
 - [Rusa's Legacy](https://hilmiyafia.itch.io/rusas-legacy), 2024, an escape room game.
 - [Amber and Ice](https://hilmiyafia.itch.io/amber-and-ice), 2023, a pocoman-like web puzzle game.
