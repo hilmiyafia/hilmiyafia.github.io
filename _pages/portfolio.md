@@ -1,9 +1,10 @@
 ---
-permalink: /about/
-title: "About"
+permalink: /portfolio/
+title: "Portfolio"
 ---
 
 ## Personal Research Projects
+- [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
 - [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
 - [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), implemented a ramp filtered inverse radon transform to transform sinograms back to images.
 - [Camera Projection Transformation Rectilinear to Panini Projection](https://youtu.be/ZHWN-Nnq7M0), made a projection transformation shader in HLSL to combine two cameras view in realtime.
@@ -25,11 +26,10 @@ I developed these games and apps:
 - [Astromaths](https://play.google.com/store/apps/details?id=com.hilmiyafia.astromaths), an Android hyrid game between asteroid-like game and math puzzle game.
 - [Resistor Circuit Simulator](https://play.google.com/store/apps/details?id=com.hilmiyafia.resistorcircuitsimulator), an Android resistor circuit simulator.
 
-
 ## Awards & Achievements
 - 2nd place at the [Flame Jam 2025](https://itch.io/jam/flame-jam-2025), 2025.
 - 4th place at the [Flame Game Jam 3.0](https://itch.io/jam/flame-jam-3), 2023.
-- Favorite Presentation at the [Indonesian 30th National Student Scientific Week (PIMNAS), Applied Technology Branch](), 2017.
+- Favorite Presentation at the [Indonesian 30th National Student Scientific Week (PIMNAS), Applied Technology](), 2017.
 
 ## Publication & Thesis
 - [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)
