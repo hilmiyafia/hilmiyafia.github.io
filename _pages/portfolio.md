@@ -3,15 +3,17 @@ permalink: /portfolio/
 title: "Portfolio"
 ---
 
-Hello! I’m an electrical engineer with focus on computer vision, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
+Hello! I’m an electrical engineer with focus on computer vision, embedded systems, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
 
-## Computer Vision & Machine Learning Projects
+## Personal Projects
 - [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), 2025, implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
 - [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), 2025, implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
 - [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), 2024, implemented a ramp filtered inverse radon transform to transform sinograms back to images.
 - [Pitch Predictor for Singing Synthesizer](https://youtu.be/04hoJGaozHM), 2023, prototyped a pitch predictor from notes input for singing synthesizer using WGAN-GP.
 - [Camera Projection Transformation Rectilinear to Panini Projection](https://youtu.be/ZHWN-Nnq7M0), 2023, made a projection transformation shader in HLSL to combine two cameras view in realtime.
 - [Optical Character Recognition for Seven Segment Displays](https://youtu.be/f664FwAlZV0), 2023, developed a digit recognizer and classifier using OpenCV and CNN PyTorch for android device.
+- [Unity Simulation of 2D Localization and Mapping](https://www.youtube.com/playlist?list=PLuVz-FGt23yLoWvoMgyplCmkSUjxt4aE-), 2021, made a real-time SLAM simulation in Unity with particle filter and graph SLAM.
+- [CNC Pen Plotter Machine with Arduino](https://www.youtube.com/playlist?list=PLuVz-FGt23yKQtOd2fX2dPmEw7aT6cluv), 2021, developed a pen plotter program in Arduino and its interface on computer with serial communication.
 - [Satellite Images Classification](https://youtube.com/playlist?list=PLuVz-FGt23yI1x4dVVahq1eoMrGohCcgR), 2020, programmed a satellite images classifier using CNN in PyTorch for a YouTube tutorial.
 - [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), 2019, labeled images for the dataset of the neural network and trained a YOLO based object detection model.
 - [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), 2019, single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
