@@ -40,14 +40,14 @@ I'm also a contributor in the open source project [OpenUtau](https://github.com/
 - TOEFL iBT, Score: 107/120.
 
 ## Publication & Thesis
-- [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)
-H. Y. Al-Faruq, H. Septanto
-International Journal of Power Electronics and Drive Systems (IJPEDS), Vol. 13, No. 2, 2022.
+- [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)  
+H. Y. Al-Faruq, H. Septanto  
+International Journal of Power Electronics and Drive Systems (IJPEDS), Vol. 13, No. 2, 2022.  
 DOI: 10.11591/ijpeds.v13.i2.pp665-673
-- [Orange Classification with Statistical Feature Extraction and Neural Network](https://etd.repository.ugm.ac.id/penelitian/detail/174936)
+- [Orange Classification with Statistical Feature Extraction and Neural Network](https://etd.repository.ugm.ac.id/penelitian/detail/174936)  
 Bachelor's Thesis, Faculty of Engineering, Universitas Gadjah Mada, Indonesia, 2019.
 
 ## Education
-- Bachelor's Degree in Electrical Engineering (2015-2019)
-Faculty of Engineering, Universitas Gadjah Mada, Indonesia.
+- Bachelor's Degree in Electrical Engineering (2015-2019)  
+Faculty of Engineering, Universitas Gadjah Mada, Indonesia.  
 Thesis: [Orange Classification with Statistical Feature Extraction and Neural Network](https://etd.repository.ugm.ac.id/penelitian/detail/174936)
