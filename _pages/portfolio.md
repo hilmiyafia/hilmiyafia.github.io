@@ -5,7 +5,7 @@ title: "Portfolio"
 
 Hello! I’m an electrical engineer with focus on computer vision, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
 
-## Personal Research Projects
+## Computer Vision & Machine Learning Projects
 - [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), 2025, implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
 - [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), 2025, implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
 - [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), 2024, implemented a ramp filtered inverse radon transform to transform sinograms back to images.
@@ -37,7 +37,7 @@ I'm also a contributor in the open source project [OpenUtau](https://github.com/
 - Favorite Presentation at the [Indonesian 30th National Student Scientific Week (PIMNAS), Applied Technology](), 2017.
 
 ## Certification
-- TOEFL iBT, Score: 107/120
+- TOEFL iBT, Score: 107/120.
 
 ## Publication & Thesis
 - [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)
