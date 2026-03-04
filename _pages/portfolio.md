@@ -5,7 +5,10 @@ title: "Portfolio"
 
 Hello! I’m an electrical engineer with focus on computer vision, embedded systems, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
 
-## Personal Projects
+## Machine Learning and Computer Vision Projects
+- [YOLO Implementation from Scratch](https://github.com/hilmiyafia/yolo-fruit-detection), 2025, implemented YOLOv8n from scratch using Pytorch.
+- [Card Suits Recognition](https://github.com/hilmiyafia/card-suits-recognition), 2025, card suit shapes recognition using classical computer vision techniques.
+- [Fiber Detection and Length Measurement](https://github.com/hilmiyafia/fiber-detection), 2025, fiber length measurement using classical computer vision techniques.
 - [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), 2025, implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
 - [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), 2025, implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
 - [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), 2024, implemented a ramp filtered inverse radon transform to transform sinograms back to images.
@@ -18,8 +21,9 @@ Hello! I’m an electrical engineer with focus on computer vision, embedded syst
 - [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), 2019, labeled images for the dataset of the neural network and trained a YOLO based object detection model.
 - [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), 2019, single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 
-## Games & Apps Projects
+## Game & Application Projects
 I developed these games and apps:
+- [Anomaly Watch](https://hilmiyafia.itch.io/anomaly-watch), 2026, a spot the difference game.
 - [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), 2025, an Android singing synthesizer that is based on the WORLD vocoder.
 - [Space Tracer](https://hilmiyafia.itch.io/space-tracer), 2025, a 3D space racing web game.
 - [Rusa's Legacy](https://hilmiyafia.itch.io/rusas-legacy), 2024, an escape room game.
@@ -41,7 +45,7 @@ I'm also a contributor in the open source project [OpenUtau](https://github.com/
 ## Certification
 - TOEFL iBT, Score: 107/120.
 
-## Publication & Thesis
+## Publications & Thesis
 - [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)  
 H. Y. Al-Faruq, H. Septanto  
 International Journal of Power Electronics and Drive Systems (IJPEDS), Vol. 13, No. 2, 2022.  
