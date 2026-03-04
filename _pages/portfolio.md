@@ -21,7 +21,7 @@ Hello! I’m an electrical engineer with focus on computer vision, embedded syst
 - [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), 2019, labeled images for the dataset of the neural network and trained a YOLO based object detection model.
 - [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), 2019, single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 
-## Game & Application Projects
+## Game and Application Projects
 I developed these games and apps:
 - [Anomaly Watch](https://hilmiyafia.itch.io/anomaly-watch), 2026, a spot the difference game.
 - [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), 2025, an Android singing synthesizer that is based on the WORLD vocoder.
