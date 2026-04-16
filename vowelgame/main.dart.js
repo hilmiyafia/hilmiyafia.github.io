@@ -61115,9 +61115,8 @@ s.tF()
 q.at=A.aol(A.cD(0,50),new A.a3V(q))}},
 Hw(a){var s=this.d/500,r=(A.P(a.b/s,25,250)-25)/225,q=1-r
 this.e.sp(new A.p0(1-(A.P(a.a/s,25*q+175*r,475*q+325*r)-25)/450,q))},
-qj(){var s=this.y
-if(s===-2||s===9||this.as){s=this.at
-if(s!=null)s.aP()}},
+qj(){var s=this.at
+return s==null?null:s.aP()},
 Eh(){var s,r,q,p,o,n,m=this.f
 B.b.I(m)
 for(s=this.w,r=0;r<9;++r){q=B.h.aM(r,3)
