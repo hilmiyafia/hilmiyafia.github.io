@@ -3,7 +3,16 @@ permalink: /portfolio/
 title: "Portfolio"
 ---
 
-Hello! I’m an electrical engineer with focus on computer vision, embedded systems, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
+Hello! My name is Hilmi, I'm an electrical engineer with focus on signal processing, computer vision & graphics, and machine learning. I also do game development and manage my youtube channel.
+
+## Table of Contents
+
+- [Machine Learning & Computer Vision Projects](#machine-learning--computer-vision-projects)
+- [Game & Application Projects](#game--application-projects)
+- [Awards & Achievements](#awards--achievements)
+- [Certification](#certification)
+- [Publication & Thesis](#publications--thesis)
+- [Education](#education)
 
 ## Machine Learning & Computer Vision Projects
 - [YOLO Implementation from Scratch](https://github.com/hilmiyafia/yolo-fruit-detection), 2025, implemented YOLOv8n from scratch using Pytorch.

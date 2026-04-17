@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Hilmi Yafi Al-Faruq"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Machine Learning, Computer Vision, and Computer Graphics."
+  bio    : "Signal Processing, Computer Vision & Graphics, and Machine Learning."
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
