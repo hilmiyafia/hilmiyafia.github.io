@@ -1,11 +1,11 @@
 {
-    "name": "guess_the_vowel_game",
-    "short_name": "guess_the_vowel_game",
+    "name": "Guess the Vowel Game",
+    "short_name": "Guess the Vowel Game",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Can you guess the vowel?",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
