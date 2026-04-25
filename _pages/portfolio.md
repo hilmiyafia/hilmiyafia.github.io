@@ -5,6 +5,8 @@ title: "Portfolio"
 
 Hello! My name is Hilmi, I'm an electrical engineer with focus on signal processing, computer vision & graphics, and machine learning. I also do game development and manage my youtube channel.
 
+I'm open for opportunities.
+
 ## Table of Contents
 
 - [Machine Learning & Computer Vision Projects](#machine-learning--computer-vision-projects)
