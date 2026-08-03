@@ -17,6 +17,7 @@ I'm open for opportunities.
 - [Education](#education)
 
 ## Machine Learning & Computer Vision Projects
+- [TD3 Reinforcement Learning Implementation from Scratch](https://github.com/hilmiyafia/reinforcement-learning/tree/main/td3), 2026, implemented TD3 from scratch, finding the optimal reward and state variables for the network.
 - [YOLO Implementation from Scratch](https://github.com/hilmiyafia/yolo-fruit-detection), 2025, implemented YOLOv8n from scratch using Pytorch.
 - [Card Suits Recognition](https://github.com/hilmiyafia/card-suits-recognition), 2025, card suit shapes recognition using classical computer vision techniques.
 - [Fiber Detection and Length Measurement](https://github.com/hilmiyafia/fiber-detection), 2025, fiber length measurement using classical computer vision techniques.
@@ -34,6 +35,7 @@ I'm open for opportunities.
 
 ## Game & Application Projects
 I developed these games and apps:
+- [Catapult Shooter AR](https://play.google.com/store/apps/details?id=com.hilmiyafia.catapultshooterar&hl=en), 2026, an android augmented reality game using Unity and AR Core.
 - [Anomaly Watch](https://hilmiyafia.itch.io/anomaly-watch), 2026, a spot the difference game.
 - [Gitakita](https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita), 2025, an Android singing synthesizer that is based on the WORLD vocoder.
 - [Space Tracer](https://hilmiyafia.itch.io/space-tracer), 2025, a 3D space racing web game.
