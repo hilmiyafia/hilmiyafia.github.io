@@ -3,12 +3,23 @@ permalink: /portfolio/
 title: "Portfolio"
 ---
 
+<style>
+.parent-container {
+font-family: 'Arial', sans-serif;
+font-size: 10px;
+}
+.parent-container * {
+font-family: inherit;
+font-size: inherit;
+}
+</style>
+
+<div="parent-container">
 <p>
 I'm an electrical engineer working on <b>computer vision</b> & <b>graphics</b>. I also do <b>game development</b> and manage my youtube channel.
 
 I'm open for opportunities.
 </p>
-
 <h2>Projects</h2>
 <table style="width: 100%">
 <tr>
@@ -76,6 +87,7 @@ I'm open for opportunities.
 <br>Single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 </td></tr>
 </table>
+</div>
 
 ## Game & Application Projects
 
