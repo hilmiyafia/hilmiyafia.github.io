@@ -1,0 +1,44 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes";
+
+/* Body text */
+body {
+  font-size: 16px;
+}
+
+/* Main content */
+.page__content {
+  font-size: 17px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* Navigation */
+.masthead {
+  font-size: 15px;
+}
+
+/* Sidebar */
+.sidebar {
+  font-size: 14px;
+}
+
+/* Code */
+code, pre {
+  font-size: 14px;
+}
