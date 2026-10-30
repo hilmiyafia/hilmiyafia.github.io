@@ -1,12 +1,15 @@
 ---
 permalink: /portfolio/
-title: "Portfolio"
+title: ""
 ---
 
 <style>
 .parent-container {
 font-family: 'Times New Roman';
-font-size: 14px;
+font-size: 20px;
+}
+.parent-container * {
+font-family: inherit;
 }
 </style>
 
