@@ -6,20 +6,24 @@ title: ""
 <style>
 .parent-container {
 font-family: 'Times New Roman';
-font-size: 20px;
+font-size: 15px;
 }
 .parent-container * {
 font-family: inherit;
+}
+.table * {
+font-size: 15px;
 }
 </style>
 
 <div class="parent-container">
 <p>
 I'm an electrical engineer working on <b>computer vision</b> & <b>graphics</b>. I also do <b>game development</b> and manage my youtube channel.
-
+<br>
 I'm open for opportunities.
 </p>
 <h2>Projects</h2>
+<div class="table">
 <table style="width: 100%">
 <tr>
 <td style="width: 50%; vertical-align: top; text-align: center">
@@ -86,6 +90,7 @@ I'm open for opportunities.
 <br>Single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 </td></tr>
 </table>
+</div>
 </div>
 
 ## Game & Application Projects
