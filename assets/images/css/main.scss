@@ -42,3 +42,19 @@ h3 {
 code, pre {
   font-size: 14px;
 }
+
+/* Make table text match article text */
+table {
+  font-size: 1em;
+}
+
+th,
+td {
+  font-size: 1em;
+  padding: 0.5em 0.75em;
+}
+
+/* Keep table line spacing comfortable */
+table {
+  line-height: 1.6;
+}
