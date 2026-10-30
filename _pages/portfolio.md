@@ -17,10 +17,31 @@ I'm open for opportunities.
 - [Education](#education)
 
 ## Machine Learning & Computer Vision Projects
-- [TD3 Reinforcement Learning Implementation from Scratch](https://github.com/hilmiyafia/reinforcement-learning/tree/main/td3), 2026, implemented TD3 from scratch, finding the optimal reward and state variables for the network.
-- [YOLO Implementation from Scratch](https://github.com/hilmiyafia/yolo-fruit-detection), 2025, implemented YOLOv8n from scratch using Pytorch.
-- [Card Suits Recognition](https://github.com/hilmiyafia/card-suits-recognition), 2025, card suit shapes recognition using classical computer vision techniques.
-- [Fiber Detection and Length Measurement](https://github.com/hilmiyafia/fiber-detection), 2025, fiber length measurement using classical computer vision techniques.
+<table style="width: 100%">
+<tr>
+<td style="width: 50%; vertical-align: top; text-align: center">
+<img src="https://github.com/hilmiyafia/reinforcement-learning/raw/main/td3/demo1.gif" style="border-radius: 8px; height: 150px"><br>
+<a href="https://github.com/hilmiyafia/reinforcement-learning/tree/main/td3">PyTorch TD3 Reinforcement Learning Implementation</a>
+</td>
+<td style="width: 50%; vertical-align: top; text-align: center">
+<img src="https://github.com/hilmiyafia/yolo-fruit-detection/raw/main/demo.gif" style="border-radius: 8px; height: 150px"><br>
+<a href="https://github.com/hilmiyafia/yolo-fruit-detection">PyTorch YOLOv8n Implementation</a>
+</td>
+</tr>
+</table>
+<table style="width: 100%">
+<tr>
+<td style="width: 50%; vertical-align: top; text-align: center">
+<img src="https://github.com/hilmiyafia/card-suits-recognition/raw/main/demo.gif" style="border-radius: 8px; height: 150px"><br>
+<a href="https://github.com/hilmiyafia/card-suits-recognition">OpenCV Card Suits Recognition</a>
+</td>
+<td style="width: 50%; vertical-align: top; text-align: center">
+<img src="https://github.com/hilmiyafia/fiber-detection/raw/main/demo.gif" style="border-radius: 8px; height: 150px"><br>
+<a href="https://github.com/hilmiyafia/fiber-detection">OpenCV Fiber Detection and Length Measurement</a>
+</td>
+</tr>
+</table>
+
 - [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), 2025, implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
 - [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), 2025, implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
 - [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), 2024, implemented a ramp filtered inverse radon transform to transform sinograms back to images.
@@ -34,6 +55,7 @@ I'm open for opportunities.
 - [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), 2019, single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 
 ## Game & Application Projects
+
 I developed these games and apps:
 - [Catapult Shooter AR](https://play.google.com/store/apps/details?id=com.hilmiyafia.catapultshooterar&hl=en), 2026, an android augmented reality game using Unity and AR Core.
 - [Anomaly Watch](https://hilmiyafia.itch.io/anomaly-watch), 2026, a spot the difference game.
@@ -51,14 +73,17 @@ I developed these games and apps:
 I'm also a contributor in the open source project [OpenUtau](https://github.com/stakira/OpenUtau).
 
 ## Awards & Achievements
+
 - 2nd place at the [Flame Jam 2025](https://itch.io/jam/flame-jam-2025), 2025.
 - 4th place at the [Flame Game Jam 3.0](https://itch.io/jam/flame-jam-3), 2023.
 - Favorite Presentation at the [Indonesian 30th National Student Scientific Week (PIMNAS), Applied Technology](), 2017.
 
 ## Certification
+
 - TOEFL iBT, Score: 107/120.
 
 ## Publications & Thesis
+
 - [A Comparison between Six-Step and Sine-Wave Commutation Methods for Brushless Direct Current Motors](doi.org/10.11591/ijpeds.v13.i2.pp665-673)  
 H. Y. Al-Faruq, H. Septanto  
 International Journal of Power Electronics and Drive Systems (IJPEDS), Vol. 13, No. 2, 2022.  
@@ -67,6 +92,7 @@ DOI: 10.11591/ijpeds.v13.i2.pp665-673
 Bachelor's Thesis, Faculty of Engineering, Universitas Gadjah Mada, Indonesia, 2019.
 
 ## Education
+
 - Bachelor's Degree in Electrical Engineering (2015-2019)  
 Faculty of Engineering, Universitas Gadjah Mada, Indonesia.  
 Thesis: [Orange Classification with Statistical Feature Extraction and Neural Network](https://etd.repository.ugm.ac.id/penelitian/detail/174936)
