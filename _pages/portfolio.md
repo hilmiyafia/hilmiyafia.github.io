@@ -5,16 +5,12 @@ title: "Portfolio"
 
 <style>
 .parent-container {
-font-family: 'Arial', sans-serif;
-font-size: 10px;
-}
-.parent-container * {
-font-family: inherit;
-font-size: inherit;
+font-family: 'Times New Roman';
+font-size: 14px;
 }
 </style>
 
-<div="parent-container">
+<div class="parent-container">
 <p>
 I'm an electrical engineer working on <b>computer vision</b> & <b>graphics</b>. I also do <b>game development</b> and manage my youtube channel.
 
