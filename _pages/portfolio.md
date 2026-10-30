@@ -3,20 +3,13 @@ permalink: /portfolio/
 title: "Portfolio"
 ---
 
-Hello! My name is Hilmi, I'm an electrical engineer with focus on signal processing, computer vision & graphics, and machine learning. I also do game development and manage my youtube channel.
+<p>
+I'm an electrical engineer working on <b>computer vision</b> & <b>graphics</b>. I also do <b>game development</b> and manage my youtube channel.
 
 I'm open for opportunities.
+</p>
 
-## Table of Contents
-
-- [Machine Learning & Computer Vision Projects](#machine-learning--computer-vision-projects)
-- [Game & Application Projects](#game--application-projects)
-- [Awards & Achievements](#awards--achievements)
-- [Certification](#certification)
-- [Publication & Thesis](#publications--thesis)
-- [Education](#education)
-
-## Machine Learning & Computer Vision Projects
+<h2>Projects</h2>
 <table style="width: 100%">
 <tr>
 <td style="width: 50%; vertical-align: top; text-align: center">
@@ -28,8 +21,6 @@ I'm open for opportunities.
 <a href="https://github.com/hilmiyafia/yolo-fruit-detection">PyTorch YOLOv8n Implementation</a>
 </td>
 </tr>
-</table>
-<table style="width: 100%">
 <tr>
 <td style="width: 50%; vertical-align: top; text-align: center">
 <img src="https://github.com/hilmiyafia/card-suits-recognition/raw/main/demo.gif" style="border-radius: 8px; height: 150px"><br>
@@ -40,19 +31,51 @@ I'm open for opportunities.
 <a href="https://github.com/hilmiyafia/fiber-detection">OpenCV Fiber Detection and Length Measurement</a>
 </td>
 </tr>
+<tr><td colspan=2>
+<a href="https://github.com/hilmiyafia/gan-implementations">Various GAN Implementations</a>
+<br>Implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtu.be/vp-Ku2CIRIQ">Autoencoder Based Image Clustering</a>
+<br>Implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtu.be/JYaDfRyl45U">Inverse Radon Transform for Sinogram Backprojection</a>
+<br>Implemented a ramp filtered inverse radon transform to transform sinograms back to images.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtu.be/04hoJGaozHM">Pitch Predictor for Singing Synthesizer</a>
+<br>Prototyped a pitch predictor from notes input for singing synthesizer using WGAN-GP.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtu.be/ZHWN-Nnq7M0">Camera Projection Transformation Rectilinear to Panini Projection</a>
+<br>Made a projection transformation shader in HLSL to combine two cameras view in realtime.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtu.be/f664FwAlZV0">Optical Character Recognition for Seven Segment Displays</a>
+<br>Developed a digit recognizer and classifier using OpenCV and CNN PyTorch for android device.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://www.youtube.com/playlist?list=PLuVz-FGt23yLoWvoMgyplCmkSUjxt4aE-">Unity Simulation of 2D Localization and Mapping</a>
+<br>Made a real-time SLAM simulation in Unity with particle filter and graph SLAM.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://www.youtube.com/playlist?list=PLuVz-FGt23yKQtOd2fX2dPmEw7aT6cluv">CNC Pen Plotter Machine with Arduino</a>
+<br>Developed a pen plotter program in Arduino and its interface on computer with serial communication.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtube.com/playlist?list=PLuVz-FGt23yI1x4dVVahq1eoMrGohCcgR">Satellite Images Classification</a>
+<br>Programmed a satellite images classifier using CNN in PyTorch for a YouTube tutorial.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtu.be/VlP7VEJZV4o">Smiley Drawings Object Detection</a>
+<br>Labeled images for the dataset of the neural network and trained a YOLO based object detection model.
+</td></tr>
+<tr><td colspan=2>
+<a href="https://youtu.be/NDURVGWZI1s">3D Head Pose Estimation</a>
+<br>Single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
+</td></tr>
 </table>
-
-- [Various GAN Implementations](https://github.com/hilmiyafia/gan-implementations), 2025, implemented InfoGAN, StyleGAN, TraVeLGAN, and StarGAN.
-- [Autoencoder Based Image Clustering](https://youtu.be/vp-Ku2CIRIQ), 2025, implemented an unsupervised clustering with adversarial autoencoder for cat images using PyTorch.
-- [Inverse Radon Transform for Sinogram Backprojection](https://youtu.be/JYaDfRyl45U), 2024, implemented a ramp filtered inverse radon transform to transform sinograms back to images.
-- [Pitch Predictor for Singing Synthesizer](https://youtu.be/04hoJGaozHM), 2023, prototyped a pitch predictor from notes input for singing synthesizer using WGAN-GP.
-- [Camera Projection Transformation Rectilinear to Panini Projection](https://youtu.be/ZHWN-Nnq7M0), 2023, made a projection transformation shader in HLSL to combine two cameras view in realtime.
-- [Optical Character Recognition for Seven Segment Displays](https://youtu.be/f664FwAlZV0), 2023, developed a digit recognizer and classifier using OpenCV and CNN PyTorch for android device.
-- [Unity Simulation of 2D Localization and Mapping](https://www.youtube.com/playlist?list=PLuVz-FGt23yLoWvoMgyplCmkSUjxt4aE-), 2021, made a real-time SLAM simulation in Unity with particle filter and graph SLAM.
-- [CNC Pen Plotter Machine with Arduino](https://www.youtube.com/playlist?list=PLuVz-FGt23yKQtOd2fX2dPmEw7aT6cluv), 2021, developed a pen plotter program in Arduino and its interface on computer with serial communication.
-- [Satellite Images Classification](https://youtube.com/playlist?list=PLuVz-FGt23yI1x4dVVahq1eoMrGohCcgR), 2020, programmed a satellite images classifier using CNN in PyTorch for a YouTube tutorial.
-- [Smiley Drawings Object Detection](https://youtu.be/VlP7VEJZV4o), 2019, labeled images for the dataset of the neural network and trained a YOLO based object detection model.
-- [3D Head Pose Estimation](https://youtu.be/NDURVGWZI1s), 2019, single camera 3D head pose estimation using OpenCV and Dlib in Python and Blender.
 
 ## Game & Application Projects
 

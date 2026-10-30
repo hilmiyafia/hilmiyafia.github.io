@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hilmi Al-Faruq
+title: Hilmi Yafi A
 email: hilmi.yafi.a@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello! I’m an electrical engineer with focus on computer vision, image processing, computer graphics, and machine learning. I also do game development and YouTube as my hobby.
+  Hello!
 github_username: hilmiyafia
 minimal_mistakes_skin: default
 search: false
@@ -56,9 +56,9 @@ plugins:
   - jekyll-redirect-from
 
 author:
-  name   : "Hilmi Yafi Al-Faruq"
+  name   : "Hilmi Yafi A"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Signal Processing, Computer Vision & Graphics, and Machine Learning."
+  bio    : "Computer Vision & Graphics"
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
