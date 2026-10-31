@@ -1,75 +1,14 @@
-<style>
-    .container {
-        display: flex;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .container * {
-        font-size: 17;
-        font-family: "Calibri Light";
-        line-height: 1.5;
-    }
-
-    .column {
-        padding: 20px;
-    }
-
-    .left {
-        flex: 1;
-    }
-
-    .center {
-        flex: 5;
-    }
-
-    .right {
-        flex: 1;
-    }
-
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    th,
-    td {
-        padding: 10px;
-        border-bottom: 1px solid #000000;
-    }
-
-    tr:last-child td {
-        border-bottom: none;
-    }
-
-    a {
-        color: #01931e;
-        text-decoration: none;
-        font-weight: 600;
-        transition: color 0.2s ease;
-    }
-
-    a:hover {
-        color: #4fb700;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-    }
-
-    a:visited {
-        color: #01931e;
-    }
-</style>
-
 <head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <meta charset="UTF-8">
     <title>Hilmi Yafi A - Portfolio</title>
 </head>
 
-<body style="background-color: #f9f1ed;">
+<body>
     <div class="container">
         <div class="column left"></div>
         <div class="column center">
-            <h1 style="font-size: 35;">Hilmi Yafi A</h1>
+            <h1>Hilmi Yafi A</h1>
             <a href="mailto:hilmi.yafi.a@gmail.com">hilmi.yafi.a@gmail.com</a>&emsp;
             <a href="https://github.com/hilmiyafia">GitHub</a>&emsp;
             <a href="https://www.linkedin.com/in/hilmiyafia/">LinkedIn</a>&emsp;
@@ -83,33 +22,33 @@
                     href="https://ugm.ac.id/en/">Universitas Gadjah Mada</a>.
                 I have interned at <a href="https://www.brin.go.id/en">Indonesian National Institute of Aeronautics and
                     Space</a> (now Indonesian National Research and Innovation Agency).
-                Besides that, I also do <b>game development</b> and manage my youtube channel.
+                Besides that, I also do <b>apps</b> & <b>game development</b> and manage my youtube channel.
                 <br><br>I'm open for opportunities.
             </p>
 
-            <h2 style="font-size: 25;">Projects</h2>
-            <table style="width: 100%">
+            <h2>Projects</h2>
+            <table>
                 <tr>
-                    <td style="vertical-align: top; text-align: center">
+                    <td class="highlight">
                         <img src="https://github.com/hilmiyafia/reinforcement-learning/raw/main/td3/demo1.gif"
-                            style="border-radius: 8px; height: 150px"><br>
+                            class="highlight"><br>
                         <a href="https://github.com/hilmiyafia/reinforcement-learning/tree/main/td3">PyTorch TD3
                             RL Implementation</a>
                     </td>
-                    <td style="vertical-align: top; text-align: center">
+                    <td class="highlight">
                         <img src="https://github.com/hilmiyafia/yolo-fruit-detection/raw/main/demo.gif"
-                            style="border-radius: 8px; height: 150px"><br>
+                            class="highlight"><br>
                         <a href="https://github.com/hilmiyafia/yolo-fruit-detection">PyTorch YOLO Implementation</a>
                     </td>
-                    <td style="vertical-align: top; text-align: center">
+                    <td class="highlight">
                         <img src="https://github.com/hilmiyafia/card-suits-recognition/raw/main/demo.gif"
-                            style="border-radius: 8px; height: 150px"><br>
+                            class="highlight"><br>
                         <a href="https://github.com/hilmiyafia/card-suits-recognition">OpenCV Card Suits
                             Recognition</a>
                     </td>
-                    <td style="vertical-align: top; text-align: center">
+                    <td class="highlight">
                         <img src="https://github.com/hilmiyafia/fiber-detection/raw/main/demo.gif"
-                            style="border-radius: 8px; height: 150px"><br>
+                            class="highlight"><br>
                         <a href="https://github.com/hilmiyafia/fiber-detection">OpenCV Fiber Detection and Length
                             Measurement</a>
                     </td>
@@ -195,11 +134,124 @@
                 </tr>
             </table>
 
-            <h2 style="font-size: 25;">Education</h2>
+            <h2>Launched Apps & Games</h2>
             <table>
                 <tr>
-                    <td style="vertical-align: top; width: 30px;">
-                        <img src="assets/ugm.png" style="height: 30px">
+                    <td class="highlight" style="width: 20%;">
+                        <img src="assets/gitakita.webp" class="highlight"><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.hilmiyafia.gitakita">Gitakita</a>
+                        <br>Singing synthesizer
+                        <br><i>1000+ Downloads</i>
+                    </td>
+                    <td class="highlight" style="width: 20%;">
+                        <img src="assets/resistor.webp" class="highlight"><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.hilmiyafia.resistorcircuitsimulator">Resistor
+                            Circuit Simulator</a>
+                        <br>Resistor circuit simulator
+                        <br><i>1000+ Downloads</i>
+                    </td>
+                    <td class="highlight" style="width: 20%;">
+                        <img src="assets/statistika.webp" class="highlight"><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.hilmiyafia.statistika">Statistika</a>
+                        <br>Statistics calculator
+                        <br><i>500+ Downloads</i>
+                    </td>
+                    <td class="highlight" style="width: 20%;">
+                        <img src="assets/rotation.webp" class="highlight"><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.hilmiyafia.rotationcalculator">Rotation
+                            Calculator</a>
+                        <br>Angle meter
+                        <br><i>500+ Downloads</i>
+                    </td>
+                    <td class="highlight" style="width: 20%;">
+                        <img src="assets/mdpl.webp" class="highlight"><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.hilmiyafia.pengukurketinggianmdpl">Pengukur
+                            Ketinggian</a>
+                        <br>Altitude meter
+                        <br><i>10,000+ Downloads</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=5>
+                        <table>
+                            <tr>
+                                <td style="width: 25%;">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.hilmiyafia.catapultshooterar">Catapult
+                                        Shooter AR</a>
+                                    <br>Augmented reality shooter game
+                                </td>
+                                <td style="width: 25%;">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.hilmiyafia.impedancematcher">Impedance
+                                        Matcher</a>
+                                    <br>Electronic impedance matcher
+                                </td>
+                                <td style="width: 25%;">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.hilmiyafia.colorfall">Colorfall</a>
+                                    <br>Color match physics puzzle game
+                                </td>
+                                <td style="width: 25%;">
+                                    <a href="https://hilmiyafia.itch.io/amber-and-ice">Amber and Ice</a>
+                                    <br>Pocoman puzzle inspired game
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://hilmiyafia.itch.io/fish-game">Fish Game</a>
+                                    <br>Feeding Frenzy inspired game
+                                </td>
+                                <td>
+                                    <a href="https://hilmiyafia.itch.io/anomaly-watch">Anomaly Watch</a>
+                                    <br>Spot the difference horror game
+                                </td>
+                                <td>
+                                    <a href="https://hilmiyafia.itch.io/rusas-legacy">Rusa's Legacy</a>
+                                    <br>Third person escape room game
+                                </td>
+                                <td>
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.hilmiyafia.astromaths">Astromaths</a>
+                                    <br>Math + asteroid shooter game
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.hilmiyafia.tekatekisilangcaroll">Teka-Teki
+                                        Silang Caroll</a>
+                                    <br>Rolling-ball game
+                                </td>
+                                <td>
+                                    <a href="https://hilmiyafia.itch.io/space-tracer">Space Tracer</a>
+                                    <br>3D space racing game
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Experience</h2>
+            <table>
+                <tr>
+                    <td class="icon">
+                        <img src="assets/lapan.png" class="icon">
+                    </td>
+                    <td>
+                        <b>Indonesian National Institute of Aeronautics and Space</b>
+                        <br>Engineering Intern, advised by Dr. Harry Septanto
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <td class="icon">
+                        <img src="assets/ugm.png" class="icon">
                     </td>
                     <td>
                         <b>Universitas Gadjah Mada</b>
@@ -212,24 +264,11 @@
                 </tr>
             </table>
 
-            <h2 style="font-size: 25;">Experience</h2>
+            <h2>Publication & Thesis</h2>
             <table>
                 <tr>
-                    <td style="vertical-align: top; width: 30px;">
-                        <img src="assets/lapan.png" style="height: 30px">
-                    </td>
-                    <td>
-                        <b>Indonesian National Institute of Aeronautics and Space</b>
-                        <br>Engineering Intern, advised by Dr. Harry Septanto
-                    </td>
-                </tr>
-            </table>
-
-            <h2 style="font-size: 25;">Publication & Thesis</h2>
-            <table>
-                <tr>
-                    <td style="vertical-align: top; width: 30px;">
-                        <img src="assets/lapan.png" style="height: 30px">
+                    <td class="icon">
+                        <img src="assets/lapan.png" class="icon">
                     </td>
                     <td>
                         <a href="https://ijpeds.iaescore.com/index.php/IJPEDS/article/view/20933">A Comparison between
@@ -241,8 +280,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="vertical-align: top; width: 30px;">
-                        <img src="assets/ugm.png" style="height: 30px">
+                    <td class="icon">
+                        <img src="assets/ugm.png" class="icon">
                     </td>
                     <td>
                         <a href="https://etd.repository.ugm.ac.id/penelitian/detail/174936">Orange Classification with
@@ -253,11 +292,11 @@
                 </tr>
             </table>
 
-            <h2 style="font-size: 25;">Awards & Achievements</h2>
+            <h2>Awards & Achievements</h2>
             <table>
                 <tr>
-                    <td style="vertical-align: top; width: 30px;">
-                        <img src="assets/flame.png" style="height: 30px">
+                    <td class="icon">
+                        <img src="assets/flame.png" class="icon">
                     </td>
                     <td>
                         <a href="https://itch.io/jam/flame-jam-2025">Flame Jam 2025</a>
@@ -265,8 +304,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="vertical-align: top; width: 30px;">
-                        <img src="assets/flame.png" style="height: 30px">
+                    <td class="icon">
+                        <img src="assets/flame.png" class="icon">
                     </td>
                     <td>
                         <a href="https://itch.io/jam/flame-jam-3">Flame Game Jam 3.0 2023</a>
@@ -274,8 +313,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="vertical-align: top; text-align: center; width: 30px;">
-                        <img src="assets/pimnas.png" style="height: 23px">
+                    <td class="icon">
+                        <img src="assets/pimnas.png" class="icon">
                     </td>
                     <td>
                         <b>Indonesian 30th National Student Scientific Week (PIMNAS) 2017</b>
@@ -284,8 +323,7 @@
                 </tr>
             </table>
 
-
-            <h2 style="font-size: 25;">Certification</h2>
+            <h2>Certification</h2>
             <table>
                 <tr>
                     <td>
