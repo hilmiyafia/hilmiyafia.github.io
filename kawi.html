@@ -1,130 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kawi Writer</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi:wght@400..700&display=swap" rel="stylesheet">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            textarea {
-                width: 100vw;
-                max-width: 400px;
-                height: 100px;
-                font-family: "Noto Sans Kawi", sans-serif;
-                font-size: 24px;
-                padding: 10px;
-            }
-            .button {
-                width: 100%;
-                height: 30px;
-                text-align: center;
-                background-color: #f0f0f0;
-                border: 1px solid #ddd;
-                cursor: pointer;
-                font-size: 90%;
-            }
-            .keys {
-                width: 100vw;
-                max-width: 400px;
-            }
-        </style>
-    </head>
-    <body>
-        <p style="text-align: center;">
-            <a style="font-size: 24px;"><b>KAWI WRITER</b></a><br>
-            by Hilmi Yafi Al-Faruq 2025
-        </p>
-        <textarea id="textbox" placeholder="Type here..."></textarea>
-        <br>&nbsp;
-        <div class="keys">
-            <table width="100%">
-                <tr>
-                    <td><button class="button" onclick="insertChar('\u{11F34}')">A</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F36}')">I</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F38}')">U</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F3E}')">E</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F40}')">Ê</button></td>
+<html>
 
-                </tr>
-                <tr>
-                    <td><button class="button" onclick="insertChar('\u{11F12}')">K</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F17}')">C</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F21}')">T</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F1C}')">TH</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F26}')">P</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F03}')">-H</button></td>
-                    <td><button class="button" onclick="deleteChar()">←</button></td>
-                </tr>
-                <tr>
-                    <td><button class="button" onclick="insertChar('\u{11F14}')">G</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F19}')">J</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F23}')">D</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F1E}')">DH</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F28}')">B</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F02}')">-R</button></td>
-                    <td><button class="button" onclick="insertChar('\n')">↵</button></td>
-                </tr>
-                <tr>
-                    <td><button class="button" onclick="insertChar('\u{11F16}')">NG</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F1B}')">NY</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F25}')">N</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F20}')">NH</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F2A}')">M</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F01}')">-NG</button></td>
-                    <td><button class="button" onclick="">⇧</button></td>
-                </tr>
-                <tr>
-                    <td><button class="button" onclick="insertChar('\u{11F32}')">H</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F2F}')">SY</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F31}')">S</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F30}')">SH</button></td>
-                    <td></td>
-                    <td><button class="button" onclick="insertChar('\u{11F42}')">+</button></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><button class="button" onclick="insertChar('\u{11F2B}')">Y</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F2D}')">L</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F2C}')">R</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F2E}')">W</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F41}')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button class="button" onclick="insertChar('\u{11F51}')">1</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F52}')">2</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F53}')">3</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F54}')">4</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F55}')">5</button></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><button class="button" onclick="insertChar('\u{11F56}')">6</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F57}')">7</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F58}')">8</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F59}')">9</button></td>
-                    <td><button class="button" onclick="insertChar('\u{11F50}')">0</button></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-        <script>
-            function insertChar(char) {
-                const textbox = document.getElementById("textbox");
-                textbox.value += char;
-            }
-            function deleteChar() {
-                const textbox = document.getElementById("textbox");
-                textbox.value = textbox.value.substring(0, textbox.value.length - 2);
-            }
-        </script>
-    </body>
+<head>
+    <title>Kawi Writer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Calibri;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        textarea {
+            width: 100vw;
+            max-width: 400px;
+            height: 100px;
+            font-family: "Noto Sans Kawi", sans-serif;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .button {
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            background-color: #f0f0f0b9;
+            border: 2px solid #dddddd85;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 90%;
+            transition: background-color 0.1s ease;
+        }
+
+        .button:hover {
+            background-color: #add0ffb9;
+        }
+
+        .button:active {
+            background-color: #251e896a;
+        }
+
+        .keys {
+            width: 100vw;
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>KAWI WRITER</h1>
+    <textarea id="textbox" placeholder="Type here..."></textarea>
+    <br>
+    <div class="keys">
+        <table width="100%">
+            <tr>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F34}')">A</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F36}')">I</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F38}')">U</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F3E}')">E</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F40}')">Ê</button></td>
+
+            </tr>
+            <tr>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F12}')">K</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F17}')">C</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F21}')">T</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F1C}')">TH</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F26}')">P</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F03}')">-H</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="deleteChar()">←</button></td>
+            </tr>
+            <tr>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F14}')">G</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F19}')">J</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F23}')">D</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F1E}')">DH</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F28}')">B</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F02}')">-R</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\n')">↵</button></td>
+            </tr>
+            <tr>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F16}')">NG</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F1B}')">NY</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F25}')">N</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F20}')">NH</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F2A}')">M</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F01}')">-NG</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="">⇧</button></td>
+            </tr>
+            <tr>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F32}')">H</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F2F}')">SY</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F31}')">S</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F30}')">SH</button></td>
+                <td style="width: 14.28%;"></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F42}')">+</button></td>
+            </tr>
+            <tr>
+                <td style="width: 14.28%;"></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F2B}')">Y</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F2D}')">L</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F2C}')">R</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F2E}')">W</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F41}')">-</button></td>
+            </tr>
+            <tr>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F51}')">1</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F52}')">2</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F53}')">3</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F54}')">4</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F55}')">5</button></td>
+                <td style="width: 14.28%;"></td>
+            </tr>
+            <tr>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F56}')">6</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F57}')">7</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F58}')">8</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F59}')">9</button></td>
+                <td style="width: 14.28%;"><button class="button" onclick="insertChar('\u{11F50}')">0</button></td>
+                <td style="width: 14.28%;"></td>
+            </tr>
+        </table>
+    </div>
+    <p>by Hilmi Yafi A 2025</p>
+    <script>
+        function insertChar(char) {
+            const textbox = document.getElementById("textbox");
+            textbox.value += char;
+        }
+        function deleteChar() {
+            const textbox = document.getElementById("textbox");
+            textbox.value = textbox.value.substring(0, textbox.value.length - 2);
+        }
+    </script>
+</body>
+
 </html>

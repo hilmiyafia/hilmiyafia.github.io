@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sinusoidal Position Embedding</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+</head>
+
+<body style="align-items: center; flex-direction: column; display: flex; font-family: Calibri;">
+  <h1>SINUSOIDAL POSITION EMBEDDING</h1>
+  <table>
+    <tr>
+      <td>Max Position</td>
+      <td>:</td>
+      <td><input type="range" id="position" min="0" max="1000" value="500"></td>
+      <td><span id="position-display">(100)</span></td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td>:</td>
+      <td><input type="range" id="base" min="0" max="1000" value="500"></td>
+      <td><span id="base-display">(100)</span></td>
+    </tr>
+  </table>
+  <br>
+  <div id="canvas-container"></div>
+  <script>
+    let positionSlider;
+    let baseSlider;
+    let lastPosition = null;
+    let lastBase = null;
+    let minPosition = 1;
+    let maxPosition = 10000;
+    let minBase = 1;
+    let maxBase = 10000;
+    let positionDisplay;
+    let baseDisplay;
+    let table = [
+      [68, 1, 84, 1], [71, 44, 122, 1], [59, 81, 139, 1],
+      [44, 113, 142, 1], [33, 144, 141, 1], [39, 173, 129, 1],
+      [92, 200, 99, 1], [170, 220, 50, 1], [253, 231, 37, 1]
+    ];
+
+    function setup() {
+      let canvas = createCanvas(400, 200);
+      canvas.parent("canvas-container");
+      pixelDensity(1);
+      positionSlider = document.getElementById("position");
+      baseSlider = document.getElementById("base");
+      positionDisplay = document.getElementById("position-display");
+      baseDisplay = document.getElementById("base-display");
+    }
+
+    function draw() {
+      let newPosition = Number(positionSlider.value);
+      let newBase = Number(baseSlider.value);
+      if (newPosition != lastPosition || newBase != lastBase) {
+        lastPosition = newPosition;
+        lastBase = newBase;
+        let position = Math.round(minPosition * ((maxPosition / minPosition) ** (newPosition / 1000)));
+        let base = Math.round(minBase * ((maxBase / minBase) ** (newBase / 1000)));
+        let halfWidth = width / 2;
+        positionDisplay.textContent = "(" + position + ")";
+        baseDisplay.textContent = "(" + base + ")";
+        loadPixels();
+        for (let y = 0; y < height; y++) {
+          for (let x = 0; x < width; x++) {
+            let index = (x + y * width) * 4;
+            let d = map(x, 0, width, 0, halfWidth);
+            let p = map(y, 0, height, 0, position);
+            let t = p * (base ** (-d / halfWidth));
+            let v = x % 2 == 0 ? Math.cos(t) : Math.sin(t);
+            let color = colormap(v);
+            pixels[index + 0] = color[0];
+            pixels[index + 1] = color[1];
+            pixels[index + 2] = color[2];
+            pixels[index + 3] = 255;
+          }
+        }
+        updatePixels();
+      }
+
+      function colormap(value) {
+        let buffer = map(value, -1, 1, 0, 7.999);
+        let lower = Math.floor(buffer);
+        let upper = Math.ceil(buffer);
+        let ratio = buffer - lower;
+        let r = table[lower][0] + (table[upper][0] - table[lower][0]) * ratio;
+        let g = table[lower][1] + (table[upper][1] - table[lower][1]) * ratio;
+        let b = table[lower][2] + (table[upper][2] - table[lower][2]) * ratio;
+        return [r, g, b];
+      }
+    }
+  </script>
+  <p>by Hilmi Yafi A 2026</p>
+</body>
+
+</html>
