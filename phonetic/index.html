@@ -17,10 +17,9 @@
 
 <body style="font-family: Calibri; display: flex; flex-direction: column; align-items: center;">
     <h1>To Phonetics</h1>
-    <textarea id="textbox" placeholder="Type here..."></textarea>
-    <br>
-    <button onclick="runModel()">Convert</button>
-    <br>
+    <textarea id="textbox" placeholder="Type here..."></textarea><br>
+    <span id="prompt"></span><br>
+    <button id="convert-button" onclick="runModel()">Convert</button><br>
     <p>by Hilmi Yafi A 2026</p>
     <h2><div id="result" style="white-space: pre-line; width: 400px;"></div></h2>
     <script>
@@ -49,10 +48,16 @@
         };
 
         async function loadModel() {
+            let prompt = document.getElementById("prompt");
+            let button = document.getElementById("convert-button");
+            prompt.textContent = "Please wait while the model is loading...";
+            button.disabled = true;
             session = await ort.InferenceSession.create(
                 "./model.onnx",
                 { executionProviders: ["wasm"] }
             );
+            prompt.textContent = "Write some text above then click the Convert button below!";
+            button.disabled = false;
         }
 
         function encode(text) {
@@ -94,6 +99,10 @@
             if (!textbox) {
                 textbox = document.getElementById("textbox");
             }
+            let prompt = document.getElementById("prompt");
+            let button = document.getElementById("convert-button");
+            prompt.textContent = "Please wait while converting...";
+            button.disabled = true;
             let lines = textbox.value.split("\n");
             let line_a = [];
             let line_b = [];
@@ -127,6 +136,8 @@
                 line_a.push(part_a.join(" "));
                 line_b.push(part_b.join(" "))
             }
+            prompt.textContent = "Convertion finished!";
+            button.disabled = false;
             document.getElementById("result").textContent = line_b.join("\n");
         }
         loadModel();
