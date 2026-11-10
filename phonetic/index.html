@@ -1,150 +1,23 @@
 <html>
 
 <head>
-    <title>Phonetic Transformer</title>
-    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
-    <style>
-        textarea {
-            width: 100vw;
-            max-width: 400px;
-            height: 100px;
-            font-family: Calibri;
-            font-size: 24px;
-            padding: 10px;
-        }
-    </style>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Phonetic Transformer</title>
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+  <script src="./model.js" defer></script>
 </head>
 
-<body
-    style="font-family: Calibri; display: flex; flex-direction: column; align-items: center;  background-color: #f9f1ed;">
-    <h1>Phonetic Transformer</h1>
-    <textarea id="textbox" placeholder="Type here..."></textarea><br>
-    <span id="prompt"></span><br>
-    <button id="convert-button" onclick="runModel()">Convert</button><br>
-    <div id="result" style="white-space: pre-line; width: 400px; font-weight: bold; font-size: 30px;"></div>
-    <p style="text-align: center;">by Hilmi Yafi A 2026<br>dictionary by <a
-            href="https://github.com/cmusphinx/cmudict">CMU Sphinx</a><br>See the repo behind this converter <a
-            href="https://github.com/hilmiyafia/phonetic-transformer">here</a>!</p>
-    <script>
-        let session;
-        let textbox;
-        const table = [
-            '<start>', '<=>', '<end>',
-            "'", '-', '.', 'a', 'b', 'c', 'd', 'e', 'f', 'g',
-            'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-            'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'AA0',
-            'AA1', 'AA2', 'AE0', 'AE1', 'AE2', 'AH0', 'AH1', 'AH2', 'AO0', 'AO1',
-            'AO2', 'AW0', 'AW1', 'AW2', 'AY0', 'AY1', 'AY2', 'B', 'CH', 'D',
-            'DH', 'EH0', 'EH1', 'EH2', 'ER0', 'ER1', 'ER2', 'EY0', 'EY1', 'EY2',
-            'F', 'G', 'HH', 'IH0', 'IH1', 'IH2', 'IY0', 'IY1', 'IY2', 'JH',
-            'K', 'L', 'M', 'N', 'NG', 'OW0', 'OW1', 'OW2', 'OY0', 'OY1',
-            'OY2', 'P', 'R', 'S', 'SH', 'T', 'TH', 'UH0', 'UH1', 'UH2',
-            'UW0', 'UW1', 'UW2', 'V', 'W', 'Y', 'Z', 'ZH'];
-        const ipa = {
-            AA: "\u{251}", AE: "\u{E6}", AH: "\u{28C}", AO: "\u{254}", AW: "a\u{28A}",
-            AY: "a\u{26A}", B: "b", CH: "t\u{283}", D: "d", DH: "\u{F0}",
-            EH: "\u{25B}", ER: "\u{259}r", EY: "e\u{26A}", F: "f", G: "g",
-            HH: "h", IH: "\u{26A}", IY: "i", JH: "d\u{292}", K: "k",
-            L: "l", M: "m", N: "n", NG: "\u{14B}", OW: "o\u{28A}", OY: "\u{254}\u{26A}",
-            P: "p", R: "r", S: "s", SH: "\u{283}", T: "t", TH: "\u{3B8}",
-            UH: "\u{28A}", UW: "u", V: "v", W: "w", Y: "j", Z: "z", ZH: "\u{292}"
-        };
-
-        async function loadModel() {
-            let prompt = document.getElementById("prompt");
-            let button = document.getElementById("convert-button");
-            prompt.textContent = "Please wait while the model is loading...";
-            button.disabled = true;
-            session = await ort.InferenceSession.create(
-                "./model.onnx",
-                { executionProviders: ["wasm"] }
-            );
-            prompt.textContent = "Write some text above then click the Convert button below!";
-            button.disabled = false;
-        }
-
-        function encode(text) {
-            let tokens = [];
-            for (let i = 0; i < text.length; i++) {
-                tokens.push(BigInt(table.indexOf(text[i])));
-            }
-            return tokens;
-        }
-
-        function decode(tokens) {
-            let text = [];
-            for (let i = 0; i < tokens.length; i++) {
-                text.push(table[tokens[i]]);
-            }
-            return text;
-        }
-
-        async function sample(tokens) {
-            let inputName = session.inputNames[0];
-            let outputName = session.outputNames[0];
-            for (let i = 0; i < 30; i++) {
-                let tensor = new ort.Tensor("int64", BigInt64Array.from(tokens), [tokens.length]);
-                let feeds = { [inputName]: tensor };
-                let result = await session.run(feeds);
-                let output = result[outputName];
-                tokens.push(output.data);
-                if (output.data == table.indexOf("<end>")) {
-                    break;
-                }
-            }
-            return tokens;
-        }
-
-        async function runModel() {
-            if (!session) {
-                await loadModel();
-            }
-            if (!textbox) {
-                textbox = document.getElementById("textbox");
-            }
-            let prompt = document.getElementById("prompt");
-            let button = document.getElementById("convert-button");
-            prompt.textContent = "Please wait while converting...";
-            button.disabled = true;
-            let lines = textbox.value.split("\n");
-            let line_a = [];
-            let line_b = [];
-            for (let k = 0; k < lines.length; k++) {
-                let words = lines[k].split(" ");
-                let part_a = [];
-                let part_b = [];
-                for (let i = 0; i < words.length; i++) {
-                    if (words[i] == "") {
-                        continue;
-                    }
-                    let tokens = encode(["<start>", ...words[i].toLowerCase().replace(/[^A-Za-z]/g, ""), "<=>"]);
-                    let result = decode(await sample(tokens));
-                    let phonemes = [[]];
-                    for (let j = 0; j < result.length; j++) {
-                        if (result[j] == "<start>" || result[j] == "<end>") {
-                            continue;
-                        }
-                        if (result[j] == "<=>") {
-                            phonemes.push([]);
-                            continue;
-                        }
-                        phonemes[phonemes.length - 1].push(result[j]);
-                    }
-                    for (let j = 0; j < phonemes[1].length; j++) {
-                        phonemes[1][j] = ipa[phonemes[1][j].replaceAll("0", "").replaceAll("1", "").replaceAll("2", "")];
-                    }
-                    part_a.push(phonemes[0].join(""));
-                    part_b.push(phonemes[1].join(""));
-                }
-                line_a.push(part_a.join(" "));
-                line_b.push(part_b.join(" "))
-            }
-            prompt.textContent = "Convertion finished!";
-            button.disabled = false;
-            document.getElementById("result").textContent = line_b.join("\n");
-        }
-        loadModel();
-    </script>
+<body>
+  <h1>Phonetic Transformer</h1>
+  <textarea id="textbox" placeholder="Type here..."></textarea><br>
+  <span id="prompt"></span><br>
+  <button id="convert-button" onclick="runModel()">Convert</button><br>
+  <div id="result"></div>
+  <p id="credits">
+    by Hilmi Yafi A 2026<br>
+    dictionary by <a href="https://github.com/cmusphinx/cmudict">CMU Sphinx</a><br>
+    See the repo behind this converter <a href="https://github.com/hilmiyafia/phonetic-transformer">here</a>!
+  </p>
 </body>
 
 </html>
