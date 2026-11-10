@@ -82,6 +82,7 @@ async function runModel() {
   let button = document.getElementById("convert-button");
   prompt.textContent = "Please wait while converting...";
   button.disabled = true;
+  await new Promise(resolve => setTimeout(resolve, 1000));
   let lines = textbox.value.toLowerCase().replace(/[^A-Za-z]/g, " ").split("\n");
   let html = [];
   for (let k = 0; k < lines.length; k++) {
