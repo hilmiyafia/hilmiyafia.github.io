@@ -83,10 +83,10 @@ async function runModel() {
   prompt.textContent = "Please wait while converting...";
   button.disabled = true;
   await new Promise(resolve => setTimeout(resolve, 1000));
-  let lines = textbox.value.toLowerCase().replace(/[^A-Za-z]/g, " ").split("\n");
+  let lines = textbox.value.toLowerCase().split("\n");
   let html = [];
   for (let k = 0; k < lines.length; k++) {
-    let words = lines[k].split(" ");
+    let words = lines[k].replace(/[^A-Za-z]/g, " ").split(" ");
     let line = [];
     for (let i = 0; i < words.length; i++) {
       if (words[i] == "") {
